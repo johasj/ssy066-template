@@ -1,0 +1,19 @@
+language: java
+jdk: oraclejdk8
+sudo: false
+branches:
+  only:
+  - master
+before_install:
+- rm -r src/test
+- git clone --depth 1 --branch HandOut git@github.com:kristofersTeaching/ssy066.git
+- cp -r ssy066/src/test ./src/
+- find . -type d | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
+script: mvn test
+notifications:
+   slack: ssy066:cj4ylbDC0eDQHQ7oVLvl1lxk
+   on_success: always
+   on_failure: never
+   template:
+     - "Build result %{result} at %{repository} (%{commit}). "
+     - "Build details: %{build_url}"
