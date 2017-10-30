@@ -73,7 +73,7 @@ develop the parts of the operation.
 
 #+html: <p align="center"><img src="img/action.jpg" /></p>
 
-#+html: <p align="center"><img src="img/pred.jpg" /></p>
+#+html: <p align="center"><img src="img/preds.jpg" /></p>
 
 
 After that is completed, you will use the operations to generate and
