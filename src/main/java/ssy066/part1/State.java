@@ -16,7 +16,6 @@ import java.util.Map.Entry;
  *
  */
 public class State {
-    public final String name;
 	private final Map<String, Object> state;
 
     /**
