@@ -114,7 +114,4 @@ git commit -a -m "your commit message"
 3. Finally, push your changes to the server. 
    ~git push~
 
-Once the assignment is graded you can check if all your
-tests passed by clicking on the commits option on your repository,
-along your commit you will see either a green tick -- meaning all
-tests passed -- or a red cross otherwise.
+Once the assignment is graded you can find the report under the branch "gh-pages", the file is called surefire-report.html. You can view the Html file using the following [[https://htmlpreview.github.io/][link]]. Use the URL of your report in the mentioned link to see the report.
